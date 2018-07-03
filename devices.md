@@ -4,7 +4,7 @@
 > Retrieve device detail by name and type
 
 > Fields:
-* duplex: 0-Half, 1-Full
+> * duplex: 0-Half, 1-Full
 
 * Method: GET
 * URI: /api/devices/switch/{hostname}
