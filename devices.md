@@ -3,14 +3,6 @@
 #### Get switch detail
 > Retrieve device detail by name and type
 
-> operational-status: up/down, current port has traffic
-
-> link-status: enabled/disabled, current port is enabled, which means is port is plugged in, can have traffic
-
-> port-speed: [int] unit is Mbits/s
-
-> duplex: Half/Full
-
 > Fields:
 * duplex: 0-Half, 1-Full
 
@@ -53,7 +45,7 @@
       "vlans": [""]
     },
     "poe": "enabled/disabled",
-    "port-desc": ""
+    "desc": ""
   }]
 }
 ```
