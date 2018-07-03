@@ -8,9 +8,9 @@
 > i18n supported
 
 > Fields:
-* error-code: key is mapped to a translatable string, which can include placeholders (variables from backend)
-* error-message: default English error message from backend
-* error-data: variables used in error message
+> * error-code: key is mapped to a translatable string, which can include placeholders (variables from backend)
+> * error-message: default English error message from backend
+> * error-data: variables used in error message
 
 Response Body:
 

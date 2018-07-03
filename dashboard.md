@@ -3,7 +3,7 @@
 ## Speed test
 
 #### Get speed
-> Get upload and download speed in last **duration** seconds, default value is 300 (5 minutes)
+> Get upload and download average speed in last **duration** seconds, default value is 300 (5 minutes)
 
 * Method: GET
 * URI: /api/dashboard/speed
@@ -12,7 +12,6 @@
 
 ```json
  {
-   "duration": 300,
    "upload": {
      "max": 20,
      "current": 0.17
@@ -67,12 +66,13 @@ Response Code: 200 (404 if not found)
 ```
 * Response Code: 201
 
-### Get a specific speed test
+### Get a specific speed test result
 > Get a specific speed test result. If the status of target speed test is running, show a progress bar on GUI until the target status is "completed".
 
-> status: status of current speed test, options: "running/completed"
-> results->upload: upload speed of the current test
-> results->download: download speed of the current test
+> Fields:
+> - status: status of current speed test, options: "running/completed"
+> - results->upload: upload speed of the current test
+> - results->download: download speed of the current test
 
 * Method: GET
 * URI: /api/dashboard/speed-test/results/{id}
@@ -95,15 +95,14 @@ Response Code: 200 (404 if not found)
 ```
 * Response Code: 200 (404 if not found)
 
-#### Speed test: Mobile to TSN ????
-> **TODO** how to show both speeds on GUI ???? TSN to cloud and Mobile to TSN. Current mockup can only show one type
-
 ## Security
 
 #### Get security configuration items
 > Get all security configuration items with configured values.
 
 > Return an array of configurations.
+
+> Fields:
 > - name: [string] configuration item key, support i18n
 > - value: [string] configuration value
 > - type: [string] configuration type, which is used for presentation style. Security item should be rendered according to the type.
@@ -141,7 +140,7 @@ Response Code: 200 (404 if not found)
     "name": "intvalue",
     "value": "100",
     "desc-data": [],
-    "type": "number"
+    "type": "int"
   }
 ]
 ```
@@ -203,7 +202,6 @@ Response Code: 200 (404 if not found)
 
 #### Get networks
 > Get all configured network list
-> aggregate from switches or get from a single API ????
 
 * Method: GET
 * URI: /api/dashboard/networks
