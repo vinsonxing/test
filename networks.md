@@ -4,8 +4,8 @@
 > Get network detail settings
 
 > Fields:
-* security: 0-Low, 1-Medium, 2-High
-* wifi-auth: for PSK and radius, additional inputs are needed which will be saved to field wifi-auth-values. such as for PSK, there should be one value for the PSK value. for radius, there should be values for radius server address and port
+- security: 0-Low, 1-Medium, 2-High
+- wifi-auth: for PSK and Radius, additional inputs are needed which will be saved to field wifi-auth-values. such as for PSK, there should be one value for the PSK value. for Radius, there should be values for Radius server address and port
 
 
 * Method: GET
