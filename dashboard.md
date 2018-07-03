@@ -166,7 +166,7 @@ Response Code: 200 (404 if not found)
 ## Attentions
 
 #### Get attentions
-> Retrieve all attentions
+> Retrieve all attentions, sorted by time.
 
 > Support pagination
 
@@ -179,7 +179,7 @@ Response Code: 200 (404 if not found)
 * Method: GET
 * URI: /api/dashboard/attentions
 * Query Parameters:
-  - page, size, sort (by field type), default value: size=10
+  - page, size, default value: size=10
 * Response Body:
 
 ```json
@@ -200,7 +200,7 @@ Response Code: 200 (404 if not found)
 
 ## Networks
 
-#### Get networks
+#### Get network summaries
 > Get all configured network list
 
 * Method: GET
@@ -224,7 +224,7 @@ Response Code: 200 (404 if not found)
 
 ## Devices
 
-#### Get all devices summary
+#### Get device summaries
 > Get devices info
 
 > If error exists, an indicator will be shown, and detail info will be shown once the indicator is pressed.
@@ -291,7 +291,7 @@ Response Code: 200 (404 if not found)
 
 ## Clients
 
-#### Get clients summary
+#### Get client summaries
 > Get clients summary separated by wired and wireless
 
 * Method: GET
