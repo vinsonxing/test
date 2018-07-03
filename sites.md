@@ -4,7 +4,7 @@
 > Retrieve all sites,
 
 > Leverage this api to show site list, once user selected one site, record this site id
-> and append this site id to HTTP request header.
+> and append this site id to HTTP request header when accessing APIs for the specific site.
 
 * Method: GET
 * URI: /api/sites
