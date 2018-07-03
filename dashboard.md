@@ -104,11 +104,11 @@ Response Code: 200 (404 if not found)
 > Get all security configuration items with configured values.
 
 > Return an array of configurations.
-- name: [string] configuration item key, support i18n
-- value: [string] configuration value
-- type: [string] configuration type, which is used for presentation style. Security item should be rendered according to the type.
-- desc-data: variables should be shown in "desc"
-- desc: virtual field for i18n support, which is the message shown under item name, here it is a message key, which will be translated in different languages, its value format can be something like **dashboard_security_desc_[name]**. Such as "3 Clients" in mockup against VPN configuration , the message key should be dashboard_security_desc_**vpn**, and there should be an default English string against this key: "{0} Clients" in English language file, "{0}" is a placeholder, the value of it is from field "desc-data".
+> - name: [string] configuration item key, support i18n
+> - value: [string] configuration value
+> - type: [string] configuration type, which is used for presentation style. Security item should be rendered according to the type.
+> - desc-data: variables should be shown in "desc"
+> - desc: virtual field for i18n support, which is the message shown under item name, here it is a message key, which will be translated in different languages, its value format can be something like **dashboard_security_desc_[name]**. Such as "3 Clients" in mockup against VPN configuration , the message key should be dashboard_security_desc_**vpn**, and there should be an default English string against this key: "{0} Clients" in English language file, "{0}" is a placeholder, the value of it is from field "desc-data".
 
 
 * Method: GET
@@ -172,8 +172,10 @@ Response Code: 200 (404 if not found)
 > Support pagination
 
 > The values of name, message and action are all predefined, and support i18n.
-- action: should be mapped with corresponding GUI page for next action. According the value of this field, GUI will render a corresponding link to process this action.
-- message-data: values for the placeholders for field "message"
+
+> Fields:
+> - action: should be mapped with corresponding GUI page for next action. According the value of this field, GUI will render a corresponding link to process this action.
+> - message-data: values for the placeholders for field "message"
 
 * Method: GET
 * URI: /api/dashboard/attentions
@@ -232,7 +234,7 @@ Response Code: 200 (404 if not found)
 > If multiple errors exist, show an error list.
 
 > Fields:
-   * status: 0-offline, 1-online
+> * status: 0-offline, 1-online
 
 
 * Method: GET
