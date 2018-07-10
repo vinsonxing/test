@@ -20,7 +20,8 @@
   "number-of-users": 150,
   "rate-limit": 10,
   "guest": false,
-  "subnet": "192.168.1.0/24"
+  "subnet": "192.168.1.0/24",
+  "vlan": 11
   }, {
     "id": "93a55c8f-f463-fa9b-0601-255e08364a36",
     "name": "Guest Network 1",
@@ -33,7 +34,8 @@
     "number-of-users": 150,
     "rate-limit": 10,
     "guest": true,
-    "subnet": "192.168.0.0/24"
+    "subnet": "192.168.0.0/24",
+    "vlan": 11
   },
 ]
 ```
@@ -57,7 +59,8 @@
   "number-of-users": 150,
   "rate-limit": 10,
   "guest": false,
-  "subnet": "192.168.1.0/24"
+  "subnet": "192.168.1.0/24",
+  "vlan": 11
 }
 ```
 
@@ -80,7 +83,8 @@
   "number-of-users": 150,
   "rate-limit": 10,
   "guest": true,
-  "subnet": "192.168.0.0/24"
+  "subnet": "192.168.0.0/24",
+  "vlan": 11
 }
 ```
 * Response Body: N/A
@@ -104,7 +108,8 @@
   "number-of-users": 150,
   "rate-limit": 10,
   "guest": true,
-  "subnet": "192.168.0.0/24"
+  "subnet": "192.168.0.0/24",
+  "vlan": 11
 }
 ```
 * Response Body: N/A

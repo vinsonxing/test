@@ -50,7 +50,8 @@
   "number-of-users": 150,
   "rate-limit": 10,
   "guest": true,
-  "subnet": "192.168.0.0/24"
+  "subnet": "192.168.0.0/24",
+  "vlan": 11
 }
 ```
 * Response Body: N/A
