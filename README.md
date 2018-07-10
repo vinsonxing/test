@@ -1,8 +1,6 @@
 # EZ1K API definitions
 
-> Multiple sites are supported in EZ1K mobile app, so we add a HTTP header to indicate the current site. The header name is X-EZ1K-SITE-ID. Then all the API URIs site oriented are needless to carry site info.
-
->X-EZ1K-SITE-ID="ID"
+> There are two parts API for For EZ1k Mobile App, TSN and cloud. APIs for cloud are used to manage static data, and APIs for TSN are used to manage  dynamical data. In most cases, the data on Mobile App comes from both of two parts.
 
 ## Shared error response format
 > i18n supported
@@ -18,19 +16,18 @@ Response Body:
 {
   "error-code": "",
   "error-message": "",
-  "error-data": [""]
+  "message-data": [""]
 }
 ```
 Response Code: Per error
 
-APIs:
-
-- [Sites](./sites.md)
-> All sites related apis go here. All APIs in it need not add HTTP header X-EZ1K-SITE-ID, since they cross sites.
-
-- [Networks](./networks.md)
-
-- [Devices](./devices.md)
+Features:
 
 - [Dashboard](./dashboard.md)
-> All dashboard apis go here. As dashboard APIs are all about summary of each API Object, We prefer to separate APIs from feature perspective for it.
+> All about dashboard scenarios
+
+- [Device](./devices.md)
+> All about device management
+
+- [Network](./networks.md)
+> All about network management

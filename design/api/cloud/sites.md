@@ -7,7 +7,7 @@
 > and append this site id to HTTP request header when accessing APIs for the specific site.
 
 * Method: GET
-* URI: /api/sites
+* URI: /api/v1/sites
 * Response Body:
 
 ```json
@@ -30,7 +30,7 @@
 #### Get a specific site
 
 * Method: GET
-* URI: /api/sites/{site-id}
+* URI: /api/v1/sites/{site-id}
 * Response Body:
 
 ```json
@@ -52,7 +52,7 @@
 #### Create a site
 
 * Method: POST
-* URI: /api/sites
+* URI: /api/v1/sites
 * Request Body:
 
 ```json
@@ -83,7 +83,7 @@
 #### Update a site
 
 * Method: PUT
-* URI: /api/sites/{site-id}
+* URI: /api/v1/sites/{site-id}
 * Reqeust Body:
 
 ```json
@@ -104,5 +104,5 @@
 
 #### Delete a site
 * Method: DELETE
-* URI: /api/sites/{site-id}
+* URI: /api/v1/sites/{site-id}
 * Response Code: 204
