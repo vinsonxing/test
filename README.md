@@ -21,11 +21,7 @@ Response Body:
 ```
 Response Code: Per error
 
-APIs:
-
-- [Sites](./sites.md#### Get a specific site)
-- [Sites](./sites.md#Get a specific site)
-> All sites related apis go here. All APIs in it need not add HTTP header X-EZ1K-SITE-ID, since they cross sites.
+Features:
 
 - [Dashboard](./dashboard.md)
 > All about dashboard scenarios
