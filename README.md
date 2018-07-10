@@ -23,11 +23,11 @@ Response Code: Per error
 
 Features:
 
-- [Dashboard](./dashboard.md)
+- [Dashboard](./features/dashboard.md)
 > All about dashboard scenarios
 
-- [Device](./devices.md)
+- [Device](./features/devices.md)
 > All about device management
 
-- [Network](./networks.md)
+- [Network](./features/networks.md)
 > All about network management
